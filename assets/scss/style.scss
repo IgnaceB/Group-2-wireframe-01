@@ -1,0 +1,171 @@
+//Variables
+@mixin h2 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: -1;
+}
+
+@mixin h3 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 18px;
+}
+
+@mixin text {
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 25px;
+    color: #595353;
+}
+
+@mixin learn {
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+hr {
+    border: 2px solid #fe7881;
+    width: 8vw;
+    margin-bottom: -5px;
+}
+
+.sectionB {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 4%;
+    width: 92%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.BBlocks_frame {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Btitle {
+    width: 48vw;
+    padding: 0 5%;
+    h2 {
+        @include h2();
+        text-align: center;
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+.BBlocks {
+    border-radius: 5%;
+    box-shadow: 0px 0px 25px lightgray;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    margin: 2%;
+
+    h3 {
+        @include h3();
+        margin-top: 2vh;
+    }
+    
+    p {
+        @include text();
+        text-align: center;
+    }
+
+    a {
+        @include learn();
+    }
+}
+
+.img {
+    position: relative;
+    left: 0%;
+    width: 100px;
+    height: 100px;
+    &Bg {
+        position: absolute;
+        }
+    &Fg {
+        position: absolute;
+        //border: 1px solid red;
+        left: 18%;
+        top: 18%
+        }
+    i {
+        position: absolute;
+        left: 35%;
+        top: 37%;
+        font-size: 30px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    body {
+      width: 100vw;
+
+    }
+    .Btitle {      
+        width: 80vw;
+        h2{
+            font-size: 16px;
+        }
+    }
+    hr {
+        width: 33vw;
+    }
+    .BBlocks {
+        width: 60vw;
+
+        .img {
+            width: 50%;
+            height: 9vh;
+            &Bg {
+                width: 70%;
+                left: 19%;
+            }
+            &Fg {
+                width: 45%;
+                left: 30%
+            }
+            i {
+                font-size: 15px;
+                left: 41%     
+            }
+        }
+        
+        h3 {
+            font-size: 12px;
+        }
+
+        p, a {
+            font-size: 10px;
+            line-height: 16px;
+            padding: 0 5px 5px 5px;
+        }
+
+    }
+  }
+
+
+
+
+/*# sourceMappingURL=style.scss.map */
