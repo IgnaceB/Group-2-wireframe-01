@@ -10,6 +10,14 @@
     font-family: 'Poppins';
     font-weight: 800;
     font-size: 18px;
+    text-align: center;
+}
+
+@mixin h4 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
 }
 
 @mixin text {
@@ -27,11 +35,21 @@
     text-decoration: none;
 }
 
+@mixin block {
+    border-radius: 5%;
+    box-shadow: 0px 0px 25px lightgray;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
 
 
 hr {
     border: 2px solid #fe7881;
     width: 8vw;
+    margin-top: 20px;
     margin-bottom: -5px;
 }
 
@@ -49,7 +67,7 @@ body {
     box-sizing: border-box;
 }
 
-.BBlocks_frame {
+.BBlocks_frame, .DBlocks_frame {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -58,10 +76,11 @@ body {
     justify-content: center;
 }
 
-.Btitle {
+.title {
     width: 48vw;
     padding: 0 5%;
-    h2 {
+    margin: auto;
+        h2 {
         @include h2();
         text-align: center;
         span {
@@ -71,28 +90,21 @@ body {
 }
 
 .BBlocks {
-    border-radius: 5%;
-    box-shadow: 0px 0px 25px lightgray;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include block();
     padding: 3%;
-    margin: 2%;
-
     h3 {
         @include h3();
         margin-top: 2vh;
-    }
-    
-    p {
-        @include text();
-        text-align: center;
     }
 
     a {
         @include learn();
     }
+}
+
+p {
+    @include text();
+    text-align: center;
 }
 
 .img {
@@ -118,12 +130,51 @@ body {
     }
 }
 
+//____________SECTION D_______________
+
+.DBlocks {
+    @include block();
+    border: 10px;
+}
+
+.DBlock_img {
+    position: relative;
+    img {
+        width: 300px;
+    }
+    .D_socials {
+        position: absolute;
+        top: 75%;
+        left: 18%;
+        width: 200px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255,255,255, 0.25);
+        height: 50px;
+        i {
+            color: white;
+            opacity: 100%;
+        }
+    }
+}
+
+.DBlocks_teamDescr {
+    h4 {
+        @include h4();
+    }
+}
+
+
+
 @media only screen and (max-width: 350px) {
     body {
       width: 100vw;
 
     }
-    .Btitle {      
+    .title {      
         width: 80vw;
         h2{
             font-size: 16px;
@@ -132,9 +183,8 @@ body {
     hr {
         width: 33vw;
     }
-    .BBlocks {
-        width: 60vw;
-
+    .BBlocks, .DBlocks {
+        width: 75vw;
         .img {
             width: 50%;
             height: 9vh;
@@ -154,6 +204,7 @@ body {
         
         h3 {
             font-size: 12px;
+            margin: 0px;
         }
 
         p, a {
@@ -161,7 +212,13 @@ body {
             line-height: 16px;
             padding: 0 5px 5px 5px;
         }
-
+        .imgTeam {
+            width: 75vw;
+        }
+        .D_socials {
+            width: 50vw;
+            height: 18%;
+        }
     }
   }
 

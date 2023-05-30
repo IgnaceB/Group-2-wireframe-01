@@ -1,6 +1,7 @@
 hr {
   border: 2px solid #fe7881;
   width: 8vw;
+  margin-top: 20px;
   margin-bottom: -5px;
 }
 
@@ -18,7 +19,7 @@ body {
   box-sizing: border-box;
 }
 
-.BBlocks_frame {
+.BBlocks_frame, .DBlocks_frame {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -27,18 +28,19 @@ body {
   justify-content: center;
 }
 
-.Btitle {
+.title {
   width: 48vw;
   padding: 0 5%;
+  margin: auto;
 }
-.Btitle h2 {
+.title h2 {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 25px;
   letter-spacing: -1;
   text-align: center;
 }
-.Btitle h2 span {
+.title h2 span {
   font-weight: 500;
 }
 
@@ -49,21 +51,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3%;
   margin: 2%;
+  padding: 3%;
 }
 .BBlocks h3 {
   font-family: "Poppins";
   font-weight: 800;
   font-size: 18px;
-  margin-top: 2vh;
-}
-.BBlocks p {
-  font-family: "Lato";
-  font-size: 15px;
-  line-height: 25px;
-  color: #595353;
   text-align: center;
+  margin-top: 2vh;
 }
 .BBlocks a {
   font-family: "Lato";
@@ -71,6 +67,14 @@ body {
   line-height: 25px;
   color: black;
   text-decoration: none;
+}
+
+p {
+  font-family: "Lato";
+  font-size: 15px;
+  line-height: 25px;
+  color: #595353;
+  text-align: center;
 }
 
 .img {
@@ -95,45 +99,95 @@ body {
   color: white;
 }
 
+.DBlocks {
+  border-radius: 5%;
+  box-shadow: 0px 0px 25px lightgray;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  border: 10px;
+}
+
+.DBlock_img {
+  position: relative;
+}
+.DBlock_img img {
+  width: 300px;
+}
+.DBlock_img .D_socials {
+  position: absolute;
+  top: 75%;
+  left: 18%;
+  width: 200px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 50px;
+}
+.DBlock_img .D_socials i {
+  color: white;
+  opacity: 100%;
+}
+
+.DBlocks_teamDescr h4 {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 350px) {
   body {
     width: 100vw;
   }
-  .Btitle {
+  .title {
     width: 80vw;
   }
-  .Btitle h2 {
+  .title h2 {
     font-size: 16px;
   }
   hr {
     width: 33vw;
   }
-  .BBlocks {
-    width: 60vw;
+  .BBlocks, .DBlocks {
+    width: 75vw;
   }
-  .BBlocks .img {
+  .BBlocks .img, .DBlocks .img {
     width: 50%;
     height: 9vh;
   }
-  .BBlocks .imgBg {
+  .BBlocks .imgBg, .DBlocks .imgBg {
     width: 70%;
     left: 19%;
   }
-  .BBlocks .imgFg {
+  .BBlocks .imgFg, .DBlocks .imgFg {
     width: 45%;
     left: 30%;
   }
-  .BBlocks .img i {
+  .BBlocks .img i, .DBlocks .img i {
     font-size: 15px;
     left: 41%;
   }
-  .BBlocks h3 {
+  .BBlocks h3, .DBlocks h3 {
     font-size: 12px;
+    margin: 0px;
   }
-  .BBlocks p, .BBlocks a {
+  .BBlocks p, .BBlocks a, .DBlocks p, .DBlocks a {
     font-size: 10px;
     line-height: 16px;
     padding: 0 5px 5px 5px;
+  }
+  .BBlocks .imgTeam, .DBlocks .imgTeam {
+    width: 75vw;
+  }
+  .BBlocks .D_socials, .DBlocks .D_socials {
+    width: 50vw;
+    height: 18%;
   }
 }
 
