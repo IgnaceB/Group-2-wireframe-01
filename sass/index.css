@@ -5,7 +5,11 @@ body {
 .banner {
   margin: 4vw;
   width: 93vw;
+<<<<<<< HEAD
   background-image: url(../images/banner-bg.svg);
+=======
+  background-image: url(../assets/images/banner-bg.svg);
+>>>>>>> main
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
