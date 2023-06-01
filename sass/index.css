@@ -5,7 +5,6 @@ body {
 .banner {
   margin: 4vw;
   width: 93vw;
-  height: 135vh;
   background-image: url(../images/banner-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,15 +24,18 @@ body {
   color: white;
 }
 .banner__article--title {
-  font-size: 20px;
+  font-size: 150%;
+  white-space: normal;
   font-weight: 900;
   margin-bottom: 30px;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .banner__article--title--nobold {
   font-weight: 300;
 }
 .banner__article--paragraph {
   line-height: 30px;
+  font-family: "Lato";
 }
 .banner__article--btn {
   background: linear-gradient(90deg, rgb(72, 223, 223) 0%, rgb(23, 158, 208) 100%);
@@ -43,8 +45,18 @@ body {
   margin: 20px;
 }
 .banner__hero {
+  margin-top: 20px;
   display: flex;
+  justify-content: space-around;
   width: 90vw;
+}
+
+.spot {
+  width: 10px;
+  padding: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
 }
 
 .brands {
@@ -52,7 +64,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 20px;
+  align-items: center;
 }
 .brands img {
   margin: 10px;
@@ -72,8 +84,141 @@ body {
   box-sizing: border-box;
 }
 
+.footer {
+  background-image: url(../images/footer-bg.svg);
+  margin: 4vw;
+  width: 93vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  padding: 0px 20px 20px 20px;
+  line-height: 30px;
+  color: white;
+}
+.footer__form {
+  box-shadow: 2px 2px 2px 2px lightgray;
+  padding: 40px 20px;
+  background-color: white;
+  width: 80vw;
+  height: 40vh;
+  color: black;
+  border-radius: 10px;
+}
+.footer__form p {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.footer__form p b {
+  font-weight: bolder;
+}
+.footer__form input {
+  border: 2px solid lightgray;
+  color: lightgray;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+.footer__form button {
+  border-radius: 5px;
+  padding: 20px 93px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #ff8463, #fe77a1);
+}
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  opacity: 50%;
+}
+.footer h3 {
+  font-weight: bolder;
+  margin: 20px 0 20px 0;
+}
+.footer__main {
+  padding-top: 50px;
+}
+.footer__main--head p {
+  font-size: 11px;
+}
+.footer__main--resourcesLinks {
+  display: flex;
+  justify-content: left;
+  gap: 20%;
+}
+.footer hr {
+  border: 0;
+  display: block;
+  background-color: lightgray;
+  height: 1px;
+  margin-top: 80px;
+}
+
+.fa-brands {
+  margin: 20px 20px 0 0;
+}
+
+.credit {
+  white-space: nowrap;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (min-width: 800px) {
-  .banner__nav--pcNav {
+  .banner .banner__nav--pcNav {
     display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .banner .banner__nav--pcNav--btn {
+    align-content: center;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #ff8463, #fe77a1);
+    border-radius: 5px;
+  }
+  .banner .banner__nav a {
+    color: white;
+    margin: 10px;
+  }
+  .banner .banner__nav a:hover {
+    opacity: 50%;
+  }
+  .fa-solid {
+    display: none;
+  }
+  .footer__form {
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    align-content: center;
+    width: 60vw;
+  }
+  .footer input {
+    margin: 0;
+    border-radius: 10px;
+    border-collapse: collapse;
+  }
+  .footer button {
+    border: none;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 20px;
+  }
+  .footer__main {
+    display: flex;
+    padding: 40px 40px 0 40px;
+    justify-content: space-between;
+  }
+  .footer__main--resourcesLinks {
+    gap: 25%;
+    white-space: nowrap;
+  }
+  .footer__main--head {
+    display: block;
+  }
+  .footer__main--contact {
+    display: block;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -1,9 +1,72 @@
 
 @media only screen and (min-width: 800px) {
-    .banner__nav--pcNav {
-        display: flex;
-    } 
-  }      
+    .banner{
+        .banner__nav{
+            &--pcNav {
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+                &--btn{
+                    align-content: center;
+                    padding: 5px 10px;
+                    background: linear-gradient(to right, #ff8463, #fe77a1);
+                    border-radius: 5px;
+                }
+    
+            } 
+            & a{
+                color: white;
+                margin: 10px;
+            }
+            & a:hover{
+                opacity: 50%;
+            }
+    
+        }
+
+    }
+    .fa-solid {
+        display: none;
+    }
+    .footer{
+        &__form{
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-around;
+            height: 30vh;
+            align-content: center;
+            width: 60vw;
+        }
+        & input{
+            margin: 0;
+            border-radius: 10px;
+            border-collapse: collapse;
+        }
+        & button{
+            border: none;
+            border-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 20px 20px;
+        }
+        &__main{
+            display: flex;
+            padding: 40px 40px 0 40px;
+            justify-content: space-between;
+            &--resourcesLinks{
+                gap: 25%;
+                white-space: nowrap;
+            }
+            &--head{
+                display: block;
+            }
+            &--contact{
+                display: block;
+
+            }
+        }
+    }
+}
 
 
 
