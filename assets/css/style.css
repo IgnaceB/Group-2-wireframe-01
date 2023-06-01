@@ -488,4 +488,79 @@ body {
   font-size: 12px;
 }
 
+.blog {
+  width: 92vw;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 100px;
+}
+.blog .title {
+  width: 100%;
+}
+.blog .title hr {
+  width: 40%;
+  height: 5px;
+  background: linear-gradient(to right, #ff8463, #fe77a1);
+}
+.blog .title h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+}
+.blog .title span {
+  font-weight: 900;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.blog .container {
+  width: 100%;
+}
+.blog .container article {
+  margin-bottom: 30px;
+}
+.blog .container article img {
+  width: 100%;
+}
+.blog .container article p {
+  width: 100%;
+  color: black;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+.blog .container article div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.blog .container article div p {
+  width: 50%;
+  margin: 20px 0px 20px 0px;
+  color: #818086;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+.blog .container article button {
+  display: flex;
+  background-color: transparent;
+}
+.blog .container article button p {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: #ff8463;
+  margin-top: 2px;
+  font-weight: 600;
+}
+.blog .container article button svg {
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  color: #ff8463;
+}
+
 /*# sourceMappingURL=style.css.map */

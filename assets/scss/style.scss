@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     margin: 0;
     padding: 0;
@@ -196,7 +196,7 @@ body {
     }
 
 }
-=======
+
 //Variables
 
 $grey-text : #706f76;
@@ -562,8 +562,95 @@ body {
     }
 }
 
+.blog {
+    width: 92vw;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 100px;
 
+    .title {
+        width: 100%;
 
+        hr {
+            width: 40%;
+            height: 5px;
+            background: linear-gradient(to right, #ff8463, #fe77a1);
+        }
+
+        h2 {
+            margin: 20px 0px 20px 0px;
+            font-size: 25px;
+            font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-weight: 400;
+        }
+
+        span {
+            font-weight: 900;
+            font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        }
+    }
+
+    .container {
+        width: 100%;
+
+        article {
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+    
+            }
+
+            p {
+                width: 100%;
+                color: black;
+                line-height: 30px;
+                font-size: 20px;
+                margin-bottom: 30px;
+                font-weight: 600;
+                font-family: 'Lato', sans-serif;
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+
+                p {
+                    width: 50%;
+                    margin: 20px 0px 20px 0px;
+                    color: #818086;
+                    line-height: 25px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: 'Lato', sans-serif;
+
+                }
+            }
+
+            button {
+                
+                display: flex;
+                background-color: transparent;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 17px;
+                    color: #ff8463;
+                    margin-top: 2px;
+                    font-weight: 600;
+                }
+
+                svg {
+                    height: 35px;
+                    margin: 0;
+                    padding: 0;
+                    color: #ff8463;
+                }
+            }
+
+        }
+    }
+}
 
 /*# sourceMappingURL=style.scss.map */
->>>>>>> main
