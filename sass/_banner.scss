@@ -1,0 +1,70 @@
+.banner {
+    margin: 4vw;
+    width: 93vw;
+    height: 135vh;
+    background-image: url(../images/banner-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        &--pcNav {
+            display: none;
+        } 
+    }
+
+    &__article {
+        text-align: center;
+        color: white;
+
+        &--title {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 30px;
+
+            &--nobold {
+                font-weight: 300;
+            }
+        }
+
+        &--paragraph {
+            line-height: 30px;
+
+        }
+
+        &--btn {
+            background: linear-gradient(90deg, rgba(72, 223, 223, 1) 0%, rgba(23, 158, 208, 1) 100%);
+            padding: 15px 25px;
+            color: white;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+    }
+
+    &__hero {
+        display: flex;
+        width: 90vw;
+
+    }
+
+}
+
+.brands {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+    & img {
+        margin: 10px;
+        width: 100px;
+        opacity: 0.5;
+    }
+}
+
