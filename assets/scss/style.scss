@@ -1,4 +1,8 @@
 //Variables
+
+$grey-text : #706f76;
+$pink-elements: #fe7881;
+
 @mixin h2 {
     font-family: 'Poppins';
     font-weight: 400;
@@ -16,15 +20,22 @@
 @mixin h4 {
     font-family: 'Poppins';
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+}
+
+@mixin h5 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 12px;
+    text-align: left;
 }
 
 @mixin text {
     font-family: 'Lato';
     font-size: 15px;
     line-height: 25px;
-    color: #595353;
+    color: $grey-text;
 }
 
 @mixin learn {
@@ -36,8 +47,8 @@
 }
 
 @mixin block {
-    border-radius: 5%;
-    box-shadow: 0px 0px 25px lightgray;
+    border-radius: 3%;
+    box-shadow: 0px 0px 25px #f6f6f6;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -47,13 +58,13 @@
 
 
 hr {
-    border: 2px solid #fe7881;
+    border: 3px solid $pink-elements;
     width: 8vw;
     margin-top: 20px;
-    margin-bottom: -5px;
+    //margin-bottom: -5px;
 }
 
-.sectionB {
+.sectionB, .sectionD, .sectionE {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -67,7 +78,7 @@ body {
     box-sizing: border-box;
 }
 
-.BBlocks_frame, .DBlocks_frame {
+.BBlocks_frame, .DBlocks_frame, .EBlocks_frame {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -91,7 +102,8 @@ body {
 
 .BBlocks {
     @include block();
-    padding: 3%;
+    width: 275px;
+    padding: 15px 0px;
     h3 {
         @include h3();
         margin-top: 2vh;
@@ -100,12 +112,14 @@ body {
     a {
         @include learn();
     }
+    p {
+        @include text();
+        text-align: center;
+        width: 90%;
+    }
 }
 
-p {
-    @include text();
-    text-align: center;
-}
+
 
 .img {
     position: relative;
@@ -140,7 +154,7 @@ p {
 .DBlock_img {
     position: relative;
     img {
-        width: 300px;
+        width: 100%;
     }
     .D_socials {
         position: absolute;
@@ -165,14 +179,112 @@ p {
     h4 {
         @include h4();
     }
+    p {
+        @include text();
+        text-align: center
+    }
+    > * {
+        margin:10px 0;
+    }
 }
 
+
+//____________SECTION E_______________
+
+.sectionE {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .fa-ellipsis {
+        margin: auto;
+        color: $pink-elements;
+        font-size: 50px;
+    }
+}
+
+.EBlocks {
+    @include block();
+    height: fit-content;
+    margin: 10px;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    &_header {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & > * {
+            color: $pink-elements;
+            font-size: 20px;
+            margin: 20px 10px 0px 10px;
+        }
+    }
+    &_text {
+        @include text();
+        width: 80%;
+        text-align: left;
+        //margin: 10px 10px;
+    }
+    &_author {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        &_pic {
+            position: relative;
+            top: -20px;
+            left: -42px;
+            height: 60px;
+            width: 60px;
+            img {
+                position: absolute;
+            }
+            img[alt="author_picture"] {
+                width: 50px;
+                top: 40%;
+            }
+            img[alt="author_bg"] {
+                width: 70px;
+                top: 25%;
+                left: -13%;
+            }
+        }
+        &_name {
+            h5 {
+                @include h5();
+                margin: 0;
+            }
+            p {
+                @include text();
+                text-align: left;
+                margin: 0;
+            }
+        }
+    }
+    &_1 {
+        border: 2px solid $pink-elements;
+        order: 1
+    }
+    &_2 {
+        .fa-quote-right {
+            color: #109bd3;
+        }
+        order: 0
+    }
+    &_3 {
+        .fa-quote-right {
+            color: #109bd3;
+        }
+        order: 2
+    }
+}
 
 
 @media only screen and (max-width: 350px) {
     body {
-      width: 100vw;
-
+        margin: 0;
+        width: 100vw;
     }
     .title {      
         width: 80vw;
@@ -183,11 +295,11 @@ p {
     hr {
         width: 33vw;
     }
-    .BBlocks, .DBlocks {
-        width: 75vw;
+    .BBlocks, .DBlocks, .EBlocks {
+        width: 85vw;
         .img {
             width: 50%;
-            height: 9vh;
+            height: 100px;
             &Bg {
                 width: 70%;
                 left: 19%;
@@ -197,7 +309,7 @@ p {
                 left: 30%
             }
             i {
-                font-size: 15px;
+                font-size: 22px;
                 left: 41%     
             }
         }
@@ -207,20 +319,49 @@ p {
             margin: 0px;
         }
 
+        h4 {
+            font-size: 12px;
+        }
+
         p, a {
-            font-size: 10px;
+            font-size: 11px;
             line-height: 16px;
             padding: 0 5px 5px 5px;
         }
         .imgTeam {
-            width: 75vw;
+            width: 100%;
         }
         .D_socials {
             width: 50vw;
             height: 18%;
         }
     }
-  }
+    .EBlocks {
+        //height: fit-content;
+        &_author {
+            &_name {
+                p {
+                    font-size: 10px;
+                    line-height: 16px;
+                    padding: 0 5px 5px 5px; 
+                }
+            }
+            &_pic {
+                left: -38px;
+            }
+        }
+        &_2, &_3 {
+            display: none;
+        }
+        &_header > * {
+            font-size: 14px;
+            margin-top: 0;
+        }
+        &_text {
+            width:90%;
+        }
+    }
+}
 
 
 

@@ -1,11 +1,10 @@
 hr {
-  border: 2px solid #fe7881;
+  border: 3px solid #fe7881;
   width: 8vw;
   margin-top: 20px;
-  margin-bottom: -5px;
 }
 
-.sectionB {
+.sectionB, .sectionD, .sectionE {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@ body {
   box-sizing: border-box;
 }
 
-.BBlocks_frame, .DBlocks_frame {
+.BBlocks_frame, .DBlocks_frame, .EBlocks_frame {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -45,14 +44,15 @@ body {
 }
 
 .BBlocks {
-  border-radius: 5%;
-  box-shadow: 0px 0px 25px lightgray;
+  border-radius: 3%;
+  box-shadow: 0px 0px 25px #f6f6f6;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2%;
-  padding: 3%;
+  width: 275px;
+  padding: 15px 0px;
 }
 .BBlocks h3 {
   font-family: "Poppins";
@@ -68,13 +68,13 @@ body {
   color: black;
   text-decoration: none;
 }
-
-p {
+.BBlocks p {
   font-family: "Lato";
   font-size: 15px;
   line-height: 25px;
-  color: #595353;
+  color: #706f76;
   text-align: center;
+  width: 90%;
 }
 
 .img {
@@ -100,8 +100,8 @@ p {
 }
 
 .DBlocks {
-  border-radius: 5%;
-  box-shadow: 0px 0px 25px lightgray;
+  border-radius: 3%;
+  box-shadow: 0px 0px 25px #f6f6f6;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ p {
   position: relative;
 }
 .DBlock_img img {
-  width: 300px;
+  width: 100%;
 }
 .DBlock_img .D_socials {
   position: absolute;
@@ -137,12 +137,123 @@ p {
 .DBlocks_teamDescr h4 {
   font-family: "Poppins";
   font-weight: 800;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+}
+.DBlocks_teamDescr p {
+  font-family: "Lato";
+  font-size: 15px;
+  line-height: 25px;
+  color: #706f76;
+  text-align: center;
+}
+.DBlocks_teamDescr > * {
+  margin: 10px 0;
+}
+
+.sectionE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionE .fa-ellipsis {
+  margin: auto;
+  color: #fe7881;
+  font-size: 50px;
+}
+
+.EBlocks {
+  border-radius: 3%;
+  box-shadow: 0px 0px 25px #f6f6f6;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  height: fit-content;
+  margin: 10px;
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.EBlocks_header {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.EBlocks_header > * {
+  color: #fe7881;
+  font-size: 20px;
+  margin: 20px 10px 0px 10px;
+}
+.EBlocks_text {
+  font-family: "Lato";
+  font-size: 15px;
+  line-height: 25px;
+  color: #706f76;
+  width: 80%;
+  text-align: left;
+}
+.EBlocks_author {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+.EBlocks_author_pic {
+  position: relative;
+  top: -20px;
+  left: -42px;
+  height: 60px;
+  width: 60px;
+}
+.EBlocks_author_pic img {
+  position: absolute;
+}
+.EBlocks_author_pic img[alt=author_picture] {
+  width: 50px;
+  top: 40%;
+}
+.EBlocks_author_pic img[alt=author_bg] {
+  width: 70px;
+  top: 25%;
+  left: -13%;
+}
+.EBlocks_author_name h5 {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+}
+.EBlocks_author_name p {
+  font-family: "Lato";
+  font-size: 15px;
+  line-height: 25px;
+  color: #706f76;
+  text-align: left;
+  margin: 0;
+}
+.EBlocks_1 {
+  border: 2px solid #fe7881;
+  order: 1;
+}
+.EBlocks_2 {
+  order: 0;
+}
+.EBlocks_2 .fa-quote-right {
+  color: #109bd3;
+}
+.EBlocks_3 {
+  order: 2;
+}
+.EBlocks_3 .fa-quote-right {
+  color: #109bd3;
 }
 
 @media only screen and (max-width: 350px) {
   body {
+    margin: 0;
     width: 100vw;
   }
   .title {
@@ -154,40 +265,61 @@ p {
   hr {
     width: 33vw;
   }
-  .BBlocks, .DBlocks {
-    width: 75vw;
+  .BBlocks, .DBlocks, .EBlocks {
+    width: 85vw;
   }
-  .BBlocks .img, .DBlocks .img {
+  .BBlocks .img, .DBlocks .img, .EBlocks .img {
     width: 50%;
-    height: 9vh;
+    height: 100px;
   }
-  .BBlocks .imgBg, .DBlocks .imgBg {
+  .BBlocks .imgBg, .DBlocks .imgBg, .EBlocks .imgBg {
     width: 70%;
     left: 19%;
   }
-  .BBlocks .imgFg, .DBlocks .imgFg {
+  .BBlocks .imgFg, .DBlocks .imgFg, .EBlocks .imgFg {
     width: 45%;
     left: 30%;
   }
-  .BBlocks .img i, .DBlocks .img i {
-    font-size: 15px;
+  .BBlocks .img i, .DBlocks .img i, .EBlocks .img i {
+    font-size: 22px;
     left: 41%;
   }
-  .BBlocks h3, .DBlocks h3 {
+  .BBlocks h3, .DBlocks h3, .EBlocks h3 {
     font-size: 12px;
     margin: 0px;
   }
-  .BBlocks p, .BBlocks a, .DBlocks p, .DBlocks a {
+  .BBlocks h4, .DBlocks h4, .EBlocks h4 {
+    font-size: 12px;
+  }
+  .BBlocks p, .BBlocks a, .DBlocks p, .DBlocks a, .EBlocks p, .EBlocks a {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 0 5px 5px 5px;
+  }
+  .BBlocks .imgTeam, .DBlocks .imgTeam, .EBlocks .imgTeam {
+    width: 100%;
+  }
+  .BBlocks .D_socials, .DBlocks .D_socials, .EBlocks .D_socials {
+    width: 50vw;
+    height: 18%;
+  }
+  .EBlocks_author_name p {
     font-size: 10px;
     line-height: 16px;
     padding: 0 5px 5px 5px;
   }
-  .BBlocks .imgTeam, .DBlocks .imgTeam {
-    width: 75vw;
+  .EBlocks_author_pic {
+    left: -38px;
   }
-  .BBlocks .D_socials, .DBlocks .D_socials {
-    width: 50vw;
-    height: 18%;
+  .EBlocks_2, .EBlocks_3 {
+    display: none;
+  }
+  .EBlocks_header > * {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .EBlocks_text {
+    width: 90%;
   }
 }
 
