@@ -11,6 +11,160 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+body {
+  width: 100vw;
+}
+
+.about .sec {
+  width: 92vw;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 100px;
+}
+.about .sec hr {
+  width: 30%;
+  height: 5px;
+  background: linear-gradient(to right, #ff8463, #fe77a1);
+}
+.about .sec .left {
+  width: 100%;
+}
+.about .sec .left h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+}
+.about .sec .left span {
+  font-weight: 900;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.about .sec .left p {
+  color: #818086;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+.about .sec button {
+  margin: 40px 0px 40px 0px;
+  background: linear-gradient(to right, #ff8463, #fe77a1);
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  width: 142px;
+  height: 49px;
+}
+.about .sec .right {
+  width: 100%;
+}
+.about .sec .right svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about .sec svg {
+  display: none;
+}
+.about .videosec {
+  width: 92vw;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 100px;
+}
+.about .videosec .left {
+  overflow: hidden;
+  position: relative;
+  height: 80vw;
+  width: 92vw;
+  margin-bottom: 40px;
+}
+.about .videosec .left .back {
+  position: absolute;
+  width: 85vw;
+  top: 50px;
+  right: 50px;
+}
+.about .videosec .left img {
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85vw;
+  height: auto;
+}
+.about .videosec .right hr {
+  width: 30%;
+  height: 5px;
+  background: linear-gradient(to right, #ff8463, #fe77a1);
+}
+.about .videosec .right h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+}
+.about .videosec .right span {
+  font-weight: 900;
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.about .videosec .right p {
+  color: #818086;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+.about .videosec .cercle {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.about .videosec .cercle .cercle_2 {
+  height: 108px;
+  width: 80px;
+  background: linear-gradient(to right, #ff8463, #fe77a1);
+  border-radius: 65px 65px 65px 65px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .videosec .cercle .cercle_1 {
+  height: 108px;
+  width: 80px;
+  background: linear-gradient(to right, #32c5c2, #129ad1);
+  border-radius: 65px 65px 65px 65px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .videosec .cercle .cercle_3 {
+  height: 108px;
+  width: 80px;
+  background: linear-gradient(to right, #361ec0, #2e7fec);
+  border-radius: 65px 65px 65px 65px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+.about .videosec .cercle p {
+  transform: rotate(-45deg);
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+}
+.about .videosec .cercle p span {
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: initial;
+  font-size: 12px;
+}
+
 hr {
   border: 3px solid #fe7881;
   width: 8vw;
@@ -333,161 +487,6 @@ body {
     width: 90%;
   }
 }
-
-
-body {
-  width: 100vw;
-}
-
-.about .sec {
-  width: 92vw;
-  margin-right: 4%;
-  margin-left: 4%;
-  margin-bottom: 100px;
-}
-.about .sec hr {
-  width: 30%;
-  height: 5px;
-  background: linear-gradient(to right, #ff8463, #fe77a1);
-}
-.about .sec .left {
-  width: 100%;
-}
-.about .sec .left h2 {
-  margin: 20px 0px 20px 0px;
-  font-size: 25px;
-  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 400;
-}
-.about .sec .left span {
-  font-weight: 900;
-  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.about .sec .left p {
-  color: #818086;
-  line-height: 25px;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
-}
-.about .sec button {
-  margin: 40px 0px 40px 0px;
-  background: linear-gradient(to right, #ff8463, #fe77a1);
-  border-radius: 8px;
-  color: white;
-  font-size: 14px;
-  width: 142px;
-  height: 49px;
-}
-.about .sec .right {
-  width: 100%;
-}
-.about .sec .right svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.about .sec svg {
-  display: none;
-}
-.about .videosec {
-  width: 92vw;
-  margin-right: 4%;
-  margin-left: 4%;
-  margin-bottom: 100px;
-}
-.about .videosec .left {
-  overflow: hidden;
-  position: relative;
-  height: 80vw;
-  width: 92vw;
-  margin-bottom: 40px;
-}
-.about .videosec .left .back {
-  position: absolute;
-  width: 85vw;
-  top: 50px;
-  right: 50px;
-}
-.about .videosec .left img {
-  box-sizing: content-box;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 85vw;
-  height: auto;
-}
-.about .videosec .right hr {
-  width: 30%;
-  height: 5px;
-  background: linear-gradient(to right, #ff8463, #fe77a1);
-}
-.about .videosec .right h2 {
-  margin: 20px 0px 20px 0px;
-  font-size: 25px;
-  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 400;
-}
-.about .videosec .right span {
-  font-weight: 900;
-  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.about .videosec .right p {
-  color: #818086;
-  line-height: 25px;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: "Lato", sans-serif;
-}
-.about .videosec .cercle {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-.about .videosec .cercle .cercle_2 {
-  height: 108px;
-  width: 80px;
-  background: linear-gradient(to right, #ff8463, #fe77a1);
-  border-radius: 65px 65px 65px 65px;
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about .videosec .cercle .cercle_1 {
-  height: 108px;
-  width: 80px;
-  background: linear-gradient(to right, #32c5c2, #129ad1);
-  border-radius: 65px 65px 65px 65px;
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about .videosec .cercle .cercle_3 {
-  height: 108px;
-  width: 80px;
-  background: linear-gradient(to right, #361ec0, #2e7fec);
-  border-radius: 65px 65px 65px 65px;
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
-  font-size: 20px;
-}
-.about .videosec .cercle p {
-  transform: rotate(-45deg);
-  color: white;
-  font-family: "Poppins";
-  text-align: center;
-}
-.about .videosec .cercle p span {
-  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: initial;
-  font-size: 12px;
-}
-
 .blog {
   width: 92vw;
   margin-right: 4%;
@@ -562,5 +561,77 @@ body {
   padding: 0;
   color: #ff8463;
 }
+
+@media only screen and (min-width: 500px) {
+  #reverse {
+    flex-direction: row-reverse;
+  }
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .about .sec {
+    display: flex;
+    width: 885px;
+    margin-bottom: 0;
+  }
+  .about hr {
+    position: absolute;
+    margin: 15px;
+    width: 17%;
+  }
+  .about .left {
+    margin: 15px;
+    width: 50%;
+  }
+  .about .right {
+    margin: 15px;
+    width: 50%;
+  }
+  .about .videosec {
+    display: flex;
+    width: 885px;
+    margin-bottom: 0;
+  }
+  .about .videosec .left {
+    margin: 15px;
+    width: 50%;
+    height: auto;
+  }
+  .about .videosec .left .back {
+    width: 100%;
+  }
+  .about .videosec .left img {
+    width: 90%;
+  }
+  .about .videosec .right {
+    margin: 15px;
+    width: 50%;
+  }
+  .blog .title {
+    text-align: start;
+  }
+  .blog .title hr {
+    width: 25%;
+  }
+  .blog .containercontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .blog .container {
+    display: flex;
+    width: 885px;
+    justify-content: space-between;
+  }
+  .blog .container article {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
